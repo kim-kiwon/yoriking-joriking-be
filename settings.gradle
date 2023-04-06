@@ -1,0 +1,19 @@
+rootProject.name = 'yoriking'
+
+include 'modules'
+
+include 'modules:yoriking-domain-mysql'
+findProject(':modules:yoriking-domain-mysql')?.name = 'yoriking-domain-mysql'
+
+include 'modules:yoriking-core'
+findProject(':modules:yoriking-core')?.name = 'yoriking-core'
+
+include 'modules:yoriking-etc-yaml-importer'
+findProject(':modules:yoriking-etc-yaml-importer')?.name = 'yoriking-etc-yaml-importer'
+
+
+include 'applications'
+
+include 'applications:yoriking-app-external-api'
+findProject(':applications:yoriking-app-external-api')?.name = 'yoriking-app-external-api'
+
