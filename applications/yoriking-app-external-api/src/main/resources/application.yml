@@ -1,0 +1,11 @@
+server:
+  shutdown: graceful
+
+spring:
+  profiles:
+    active: local
+    group:
+      local:
+        - local
+      real:
+        - real
