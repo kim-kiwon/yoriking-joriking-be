@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PROJECT_ROOT="/home/ec2-user/app"
+PROJECT_ROOT="/home/ec2-user/app/applications/yoriking-app-external-api"
 JAR_FILE="$PROJECT_ROOT/spring-webapp.jar"
 
 DEPLOY_LOG="$PROJECT_ROOT/log/deploy.log"
