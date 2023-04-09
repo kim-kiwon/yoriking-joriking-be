@@ -10,6 +10,7 @@ env:
   S3_BUCKET_NAME: yoriking-github-actions-bucket
   CODE_DEPLOY_APPLICATION_NAME: my-codedeploy-app
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: yoriking
+  APP_SPEC_PATH: applications/yoriking-app-external-api/appspec.yml
 
 permissions:
   contents: read
@@ -65,4 +66,4 @@ jobs:
             --deployment-config-name CodeDeployDefault.AllAtOnce \
             --deployment-group-name ${{ env.CODE_DEPLOY_DEPLOYMENT_GROUP_NAME }} \
             --s3-location bucket=$S3_BUCKET_NAME,key=$GITHUB_SHA.zip,bundleType=zip
-
+            --source $APP_SPEC_PATH
