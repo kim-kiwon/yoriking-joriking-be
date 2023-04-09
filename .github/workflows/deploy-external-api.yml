@@ -10,7 +10,7 @@ env:
   S3_BUCKET_NAME: yoriking-github-actions-bucket
   CODE_DEPLOY_APPLICATION_NAME: my-codedeploy-app
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: yoriking
-  APP_SPEC_PATH: applications/yoriking-app-external-api/appspec.yml
+  APP_SPEC_PATH: applications/yoriking-app-external-api
 
 permissions:
   contents: read
