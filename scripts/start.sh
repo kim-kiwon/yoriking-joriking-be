@@ -3,9 +3,9 @@
 PROJECT_ROOT="/home/ec2-user/app/applications/yoriking-app-external-api"
 JAR_FILE="$PROJECT_ROOT/spring-webapp.jar"
 
-APP_LOG="$PROJECT_ROOT/log/application.log"
-ERROR_LOG="$PROJECT_ROOT/log/error.log"
-DEPLOY_LOG="$PROJECT_ROOT/log/deploy.log"
+APP_LOG="$PROJECT_ROOT/application.log"
+ERROR_LOG="$PROJECT_ROOT/error.log"
+DEPLOY_LOG="$PROJECT_ROOT/deploy.log"
 
 TIME_NOW=$(date +%c)
 
