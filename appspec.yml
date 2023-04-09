@@ -1,7 +1,7 @@
 os: Linux
 files:
   - source: /
-    destination: /home/ec2-user/build
+    destination: /home/ec2-user/app
     overwrite: yes
 permissions:
   - object: /
