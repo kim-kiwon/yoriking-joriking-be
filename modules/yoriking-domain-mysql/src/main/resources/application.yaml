@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: real
+    group:
+      local:
+        - local
+      real:
+        - real
