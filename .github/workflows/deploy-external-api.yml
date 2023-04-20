@@ -3,13 +3,13 @@ name: Deploy External API to EC2
 on:
   push:
     branches:
-      master
+      fix/github-action
 
 env:
   AWS_REGION: ap-northeast-2
-  S3_BUCKET_NAME: yoriking-github-actions-bucket
-  CODE_DEPLOY_APPLICATION_NAME: my-codedeploy-app
-  CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: yoriking
+  S3_BUCKET_NAME: my-githubaction-code-save-bucket
+  CODE_DEPLOY_APPLICATION_NAME: my-codedeploy-app-deploy-on-ec2
+  CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: my-deploy-ec2-servers
   APP_SPEC_PATH: applications/yoriking-app-external-api
 
 permissions:
@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: feature-temp
+          ref: fix/github-action
 
       # (2) JDK 17 설정
       - name: Set up JDK 17
