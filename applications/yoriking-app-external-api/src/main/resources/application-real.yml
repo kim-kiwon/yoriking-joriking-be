@@ -8,3 +8,7 @@ management:
       show-details: always
       probes:
         enabled: true
+
+server:
+  port:
+    80

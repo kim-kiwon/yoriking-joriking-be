@@ -12,7 +12,7 @@ env:
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: my-deploy-ec2-servers
   APP_SPEC_PATH: applications/yoriking-app-external-api
   PROJECT_GRADLE_PATH: :applications:yoriking-app-external-api
-  ADD_ENVIRONMENT_SCRIPT: application-external-api/scripts/secret.sh
+  ADD_ENVIRONMENT_SCRIPT: external-api/scripts/secret.sh
 
 permissions:
   contents: read
