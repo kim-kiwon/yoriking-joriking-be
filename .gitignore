@@ -9,6 +9,3 @@ out/
 **/generated/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
-### spring config
-**/application-real.yaml

@@ -9,6 +9,11 @@ DEPLOY_LOG="$PROJECT_ROOT/deploy.log"
 
 TIME_NOW=$(date +%c)
 
+# MYSQL 설정 환경변수 주입
+# 절대경로로 설정해야 CodeDeploy에서 인식함
+chmod +x /home/ec2-user/external-api/scripts/secret.sh
+source /home/ec2-user/external-api/scripts/secret.sh
+
 # build 파일 복사
 echo "$TIME_NOW > $JAR_FILE 파일 복사" >> $DEPLOY_LOG
 cp $PROJECT_ROOT/build/libs/*.jar $JAR_FILE
