@@ -13,7 +13,7 @@ public class Dish extends BaseTimeEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 
 	@Column
 	private String dishName;

@@ -12,7 +12,7 @@ import jakarta.persistence.Id;
 public class Ingredient extends BaseTimeEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 
 	@Column
 	private String ingredientName;

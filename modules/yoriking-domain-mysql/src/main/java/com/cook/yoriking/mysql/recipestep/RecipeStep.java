@@ -15,10 +15,10 @@ import jakarta.persistence.ManyToOne;
 public class RecipeStep extends BaseTimeEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 
 	@Column
-	private int stepNumber;
+	private Integer stepNumber;
 
 	@Column
 	private String recipeText;

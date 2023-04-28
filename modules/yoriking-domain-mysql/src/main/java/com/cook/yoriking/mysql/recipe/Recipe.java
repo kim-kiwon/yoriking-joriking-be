@@ -15,7 +15,7 @@ public class Recipe extends BaseTimeEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 
 	@OneToOne
 	@JoinColumn(name = "dish_id")

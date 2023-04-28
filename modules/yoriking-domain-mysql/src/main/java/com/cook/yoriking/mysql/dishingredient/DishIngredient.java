@@ -16,7 +16,7 @@ import jakarta.persistence.ManyToOne;
 public class DishIngredient extends BaseTimeEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 
 	@ManyToOne
 	@JoinColumn(name = "dish_id")
