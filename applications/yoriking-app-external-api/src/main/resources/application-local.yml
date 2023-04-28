@@ -1,3 +1,13 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true # 실행되는 SQL을 로그로 출력할지
+    properties:
+      hibernate:
+        format_sql: true # 출력되는 SQL문을 indent를 추가해 읽기 쉽도록 구성
+
 management:
   endpoints:
     web:
