@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum ResponseCodeType {
+public enum ResponseType {
 	SUCCESS(200, "1000"),
 	INVALID_INPUT(400, "4001"),
 	NOT_FOUND(404, "4002"),
