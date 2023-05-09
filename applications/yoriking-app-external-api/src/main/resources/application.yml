@@ -1,5 +1,12 @@
 server:
   shutdown: graceful
+  port: 8080
+
+springdoc:
+  version: 1.0.0
+  packages-to-scan: com.cook.yoriking
+  swagger-ui:
+    path: /docs
 
 spring:
   profiles:

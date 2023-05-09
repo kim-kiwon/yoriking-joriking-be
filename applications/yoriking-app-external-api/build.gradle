@@ -8,10 +8,12 @@ jar {
 
 dependencies {
     implementation project(':modules:yoriking-domain-mysql')
+    implementation project(':modules:yoriking-core')
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springdoc:springdoc-openapi-ui:1.7.0'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

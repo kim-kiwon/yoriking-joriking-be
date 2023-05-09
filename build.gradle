@@ -1,14 +1,6 @@
-buildscript {
-    ext {
-        springBootVersion = "3.0.5"
-    }
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "io.freefair.gradle:lombok-plugin:8.0.1"
-        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
-    }
+plugins {
+    id 'org.springframework.boot' version '3.0.6'
+    id "io.freefair.lombok" version "8.0.1"
 }
 
 allprojects {
@@ -33,7 +25,7 @@ subprojects {
             extendsFrom annotationProcessor
         }
     }
-    
+
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter-api'
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
