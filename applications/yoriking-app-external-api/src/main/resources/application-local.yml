@@ -2,7 +2,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     show-sql: true # 실행되는 SQL을 로그로 출력할지
     properties:
       hibernate:
