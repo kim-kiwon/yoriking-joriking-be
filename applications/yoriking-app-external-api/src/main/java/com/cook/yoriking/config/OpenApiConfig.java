@@ -13,9 +13,9 @@ public class OpenApiConfig {
 	@Bean
 	public OpenAPI openAPI(@Value("${springdoc.version}") String docVersion) {
 		Info info = new Info()
-			.title("Gogonew")
+			.title("Yoriking-Joriking")
 			.version(docVersion)
-			.description("gogonew API 문서입니다");
+			.description("yoriking-joriking API 문서입니다");
 
 		return new OpenAPI()
 			.components(new Components())
